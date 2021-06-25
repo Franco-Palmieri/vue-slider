@@ -1,8 +1,11 @@
 .contenitore-slide{
     border: 1px solid black
 }
+.picture-container{
+    text-align: center;
+}
 .picture-container img{
-    width: 100%;
+    max-width: 100%;
 }
 .content-slide{
     
@@ -11,4 +14,5 @@
     align-self: center;
     font-size: 30px;
 }
+
 

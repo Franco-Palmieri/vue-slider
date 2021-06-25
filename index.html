@@ -19,9 +19,14 @@
                 </div>
                 <div class="col-8 picture-container">
                     <img :src="pictures[pictureIndex]" alt="">
+                    <div class="circle-container">
+                        <!--(FOTO, INDEX) => Prendo ogni foto e indice all'interno di pictures-->
+                        <i v-for="(foto, index) in pictures" class="far fa-circle">
+                        </i>
+                    </div>
                 </div>
                 <div class="col-2 arrow" @click="next"> 
-                    <i class="far fa-arrow-alt-circle-right"></i>
+                    <i class="far fa-arrow-alt-circle-right circles"></i>
                 </div>
 
             </div>
