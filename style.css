@@ -1,3 +1,14 @@
 .contenitore-slide{
     border: 1px solid black
 }
+.picture-container img{
+    width: 100%;
+}
+.content-slide{
+    
+}
+.arrow{
+    align-self: center;
+    font-size: 30px;
+}
+
