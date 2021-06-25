@@ -23,7 +23,7 @@
                         <!--(FOTO, INDEX) => Prendo ogni foto e indice all'interno di pictures-->
                         <i 
                         v-for="(foto, index) in pictures" 
-                        :class= "circlePosition(index)" 
+                        :class= "indexCircle(index)" 
                         class="far fa-circle"
                         @click="changePicture"
                         >
