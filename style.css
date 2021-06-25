@@ -14,5 +14,14 @@
     align-self: center;
     font-size: 30px;
 }
-
-
+.circle-container{
+    
+}
+.circle{
+    overflow: hidden;
+    border-radius: 100%;
+    color: rgb(207, 207, 207);
+}
+.circlePositionNow{
+    background-color: lightblue;
+}

@@ -24,8 +24,8 @@
                         <i 
                         v-for="(foto, index) in pictures" 
                         :class= "indexCircle(index)" 
-                        class="far fa-circle"
-                        @click="changePicture"
+                        class="far fa-circle circle"
+                        @click="changePicture(index)"
                         >
                         </i>
                     </div>
