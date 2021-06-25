@@ -21,7 +21,12 @@
                     <img :src="pictures[pictureIndex]" alt="">
                     <div class="circle-container">
                         <!--(FOTO, INDEX) => Prendo ogni foto e indice all'interno di pictures-->
-                        <i v-for="(foto, index) in pictures" class="far fa-circle">
+                        <i 
+                        v-for="(foto, index) in pictures" 
+                        :class= "circlePosition(index)" 
+                        class="far fa-circle"
+                        @click="changePicture"
+                        >
                         </i>
                     </div>
                 </div>

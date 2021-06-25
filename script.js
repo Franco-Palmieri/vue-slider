@@ -30,6 +30,22 @@ const app = new Vue(
                     this.pictureIndex--;
                 }   
             },
+            //funzione per cambiare foto attraverso il
+            //cerchio collegando l'index della foto
+            //all'index del cerchio
+            changePicture: function (index){
+                this.pictureIndex = index;
+            },
+            //funzione per collegare l'index del cerchio
+            //all'index della foto
+            //ritorna un'altra classe
+            indexCircle: function (index){
+                if(index === this.pictureIndex){
+                    return "circlePositionNow";
+                }else{
+                    return "";
+                }
+            }
         },
     }
 );
