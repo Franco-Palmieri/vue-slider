@@ -1,5 +1,11 @@
+/* MODIFICHE NAVBAR */
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.disabled {
+    color: white;
+}
+.bg-red{
+    background-color: brown;
+}
 .contenitore-slide{
-    border: 1px solid black
 }
 .picture-container{
     text-align: center;
@@ -28,22 +34,35 @@
     background-color: lightblue;
 }
 .contenitore-2{
-    border: 1px solid black;
     display: flex;
     align-items: center;
 }
 .title-section{
     text-align: center;
     margin: 150px 0;
+    border-bottom: brown 4px solid;
 }
 .foto-section{
     height: 350px;
-    border: 1px solid black;
     margin-bottom: 50px;
     font-size: 15px;
 }
 .foto-section img{
     width: 100%;
     height: 200px;
-    border: 1px solid blue;
+}
+footer{
+    background-color: lightslategray;
+}
+
+ul, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.contain-footer{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

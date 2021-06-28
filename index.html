@@ -12,6 +12,37 @@
 </head>
 <body>
     <div id="app">
+        <nav class="navbar navbar-expand-md navbar-dark bg-red">
+            <a class="navbar-brand" href="#">Cosa Vedere a Roma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Attività</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Esplora</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Scopri Roma</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown04">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+              </form>
+            </div>
+          </nav>
         <div class="contenitore-slide container">
             <div class="row content-slide">
                 <div class="col-2 arrow d-flex justify-content-end" @click="prev">    
@@ -100,6 +131,34 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="container contenitore-footer">
+                <div class="row contain-footer">
+                    <ul class="lista-footer col-12 col-sm">
+                        <li>ITINERARI</li>
+                        <li><a href="#">Top itinerari</a></li>
+                        <li><a href="#">In mezza giornata</a></li>
+                        <li><a href="#">In un giorno</a></li>
+                        <li><a href="#">In due o più giorni</a></li>
+                    </ul>
+                    <ul class="lista-footer col-12 col-sm">
+                        <li>DA VEDERE</li>
+                        <li><a href="#">Imperdibili</a></li>
+                        <li><a href="#">Civitavecchia e dintorni</a></li>
+                        <li><a href="#">Gaeta e dintorni</a></li>
+                        <li><a href="#">Ostia Beach > Fregene</a></li>
+                        <li><a href="#">Ariccia</a></li>
+                    </ul>
+                    <ul class="lista-footer col-12 col-sm">
+                        <li>COME ARRIVARE</li>
+                        <li><a href="#">Stazione Termini</a></li>
+                        <li><a href="#">Il porto di Civitavecchia</a></li>
+                        <li><a href="#">Stazione Roma Trastevere</a></li>
+                        <li><a href="#">Come muoversi a Roma</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
     
     <script src="script.js"></script>
