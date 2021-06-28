@@ -14,8 +14,8 @@
     <div id="app">
         <div class="contenitore-slide container">
             <div class="row content-slide">
-                <div class="col-2 arrow" @click="prev">
-                    <i class="far fa-arrow-alt-circle-left"></i>
+                <div class="col-2 arrow d-flex justify-content-end" @click="prev">    
+                    <i class="far fa-arrow-alt-circle-left"></i>                  
                 </div>
                 <div class="col-8 picture-container">
                     <img :src="pictures[pictureIndex]" alt="">
@@ -30,12 +30,76 @@
                         </i>
                     </div>
                 </div>
-                <div class="col-2 arrow" @click="next"> 
+                <div class="col-2 arrow d-flex justify-content-start" @click="next"> 
                     <i class="far fa-arrow-alt-circle-right circles"></i>
                 </div>
-
             </div>
         </div>
+        <main class="contenitore-2">
+            <div class="container">
+                <div class="row section">
+                    <div class="title-section col-12">
+                        <h2>IN PRIMO PIANO</h2>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 section-img">
+                        <div class="foto-section">
+                            <img :src="miniPictures[0]" alt="">
+                            <div class="info-text">
+                                <h5> Il Colle Palatino </h5>
+                                <p>Il Colle Palatino, uno dei 7 colli di Roma, secondo la mitologia è proprio il luogo in cui la città fu fondata da Romolo e Remo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 section-img">
+                        <div class="foto-section">
+                            <img :src="miniPictures[1]" alt="">
+                            <div class="info-text">
+                                <h5> Il Foro Romano </h5>
+                                <p>Il foro era il centro della città ed è possibile vedere le rovine di antichi mercati, di edifici amministrativi e religiosi. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 section-img">
+                        <div class="foto-section">
+                            <img :src="miniPictures[2]" alt="">
+                            <div class="info-text">
+                                <h5> La Fontana di Trevi </h5>
+                                <p>Anch’essa nei pressi del Pantheon, troverete una delle più importanti attrazioni di Roma nonché la più famosa fontana d’Europa: la Fontana di Trevi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 section-img">
+                        <div class="foto-section">
+                            <img :src="miniPictures[3]" alt="">
+                            <div class="info-text">
+                                <h5> Piazza Navona </h5>
+                                <p>È un posto fantastico in cui bere o mangiare un gelato su una delle tante terrazze, ma attenzione, dato che questo luogo è estremamente turistico, i prezzi sono decisamente cari!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 section-img">
+                        <div class="foto-section">
+                            <img :src="miniPictures[4]" alt="">
+                            <div class="info-text">
+                                <h5> Il Pantheon </h5>
+                                <p>Il Pantheon è l’edificio antico meglio conservato di Roma e un’altra attrazione turistica importante che in questa lista non può mancare!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 section-img">
+                        <div class="foto-section">
+                            <img :src="miniPictures[5]" alt="">
+                            <div class="info-text">
+                                <h5> Piazza Venezia </h5>
+                                <p>Qui è possibile ammirare il Monumento a Vittorio Emanuele II, detto anche “Altare della Patria” o “Vittoriano”, un enorme edificio in marmo bianco dedicato al primo re d’Italia, Vittorio Emanuele II.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
     
     <script src="script.js"></script>

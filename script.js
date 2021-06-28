@@ -8,6 +8,14 @@ const app = new Vue(
                 "./img/picture-3.jpg",
                 "./img/picture-4.jpg"
             ],
+            miniPictures: [
+                "./img/picture-5.jpg",
+                "./img/picture-6.jpg",
+                "./img/picture-7.jpg",
+                "./img/picture-8.jpg",
+                "./img/picture-9.jpg",
+                "./img/picture-10.jpg"
+            ],
             pictureIndex: 0,
         },
         created (){
